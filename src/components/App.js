@@ -3,6 +3,7 @@ import SearchComponent from "./SearchComponent"
 import axios from "axios";
 import ImageListComponent from "./ImageListComponent";
 import GifListComponent from "./GifListComponent";
+import './SearchStyle.css';
 
 class App extends React.Component{
     constructor(props){
@@ -26,12 +27,16 @@ class App extends React.Component{
     render()
     {
         return(
-            <div className="ui container" style={{marginTop:'30px'}}>
+            <div className="ui container" style={{marginTop:'50px'}}>
                 <SearchComponent onSearchSubmit={this.onSearchSubmit}/>
-                <div style={{marginTop:'30px',display:'flex'}}>
+                <center className="center-text">
+                        Image-Gif Searcher
+                </center>
+                <div style={{marginTop:'50px',display:'flex'}}>
                     <div>
                         <ImageListComponent images = {this.state.images} />
                     </div>
+                   
                     <div>
                         <GifListComponent gifs = {this.state.gifs} />
                     </div>

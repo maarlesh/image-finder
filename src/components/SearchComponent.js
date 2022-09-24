@@ -1,4 +1,5 @@
 import React from "react";
+import './SearchStyle.css';
 class SearchComponent extends React.Component{
 
     constructor(props){
@@ -17,7 +18,7 @@ class SearchComponent extends React.Component{
 
                 <div className="ui form">
                     <div className="field">
-                        <div className="ui massive icon input">
+                        <div className="ui massive icon input" >
                             <input 
                                 type="text" 
                                 placeholder="Search images..." 
